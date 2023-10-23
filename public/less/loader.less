@@ -1,0 +1,37 @@
+
+.skeleton {
+    background: var(--skeleton-background);
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, var(--skeleton-background)), color-stop(18%, rgba(130, 130, 130, 0.3)), color-stop(33%, var(--skeleton-background)));
+    background: linear-gradient(to right, var(--skeleton-background) 8%, rgba(130, 130, 130, 0.3) 18%, var(--skeleton-background) 33%);
+    background-size: 800px 100px;
+    animation: wave-lines 2s infinite ease-out;
+    color: transparent !important;
+
+    * {
+        opacity: 0 !important;
+        color: transparent !important;
+    }
+
+    +.skeleton {
+        margin-top: 5px !important;
+    }
+
+   
+}
+
+.single-message.skeleton.incoming::before{
+    border-color: transparent transparent var(--skeleton-background) transparent;
+}
+.single-message.skeleton.outgoing::after{
+    border-color: transparent transparent transparent var(--skeleton-background);
+}
+
+@keyframes wave-lines {
+    0% {
+        background-position: -468px 0 ;
+    }
+
+    100% {
+        background-position: 468px 0 ;
+    }
+}

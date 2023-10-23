@@ -1,0 +1,1 @@
+<script src="https://unpkg.com/pinch-zoom-js@2.3.5/dist/pinch-zoom.min.js"></script>

@@ -1,0 +1,56 @@
+@media screen and (max-width: 576px) {
+
+	:root {
+		--header-height: 60px;
+	}
+
+	right-sidebar,
+	left-sidebar {
+		top: var(--header-height);
+		height: calc(100vh - var(--header-height));
+		width: 0;
+	}
+
+
+
+	body.has-left-sidebar .full-width-container {
+		padding-left: 0px;
+	}
+
+	body.has-right-sidebar .full-width-container {
+		padding-right: 0px;
+	}
+
+	#rightSideBarContainer .widgets-header {
+		height: var(--header-height);
+	}
+
+	#rightSideBarContainer .widgets-body {
+		height: calc(100% - var(--header-height));
+	}
+
+
+	header,
+	userbar {
+		height: var(--header-height);
+	}
+
+	.full-width-container {
+		padding-top: var(--header-height);
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+
+	#toggleLeftSidebar {
+		top: 30px;
+	}
+
+	#toggleRightSidebar {
+		display: flex;
+	}
+
+	body.right-sidebar-opened .full-width-container {
+		width: calc(100%);
+	}
+}

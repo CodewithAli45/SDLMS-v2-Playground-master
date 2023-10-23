@@ -1,0 +1,107 @@
+button.btn {
+	padding: 6px 16px;
+	font-size: 14px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	text-align: center;
+	font-family: var(--sdlms-font-family-poppins);
+	font-weight: 600;
+	user-select: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.button-md {
+	padding: 8px 20px;
+	font-size: 15px;
+}
+
+button.button-lg {
+	padding: 10px 24px;
+	font-size: 16px;
+}
+
+button.button-primary {
+	background: var(--primary-button-background-color);
+	color: var(--primary-button-text-color);
+	border: 3px var(--primary-button-background-color) solid;
+
+}
+
+button.button-secondary {
+	background: var(--secondary-button-background-color);
+	color: var(--secondary-button-text-color);
+	border: 3px var(--primary-button-background-color) solid;
+}
+
+button.button-tertiary {
+	background: var(--tertiary-button-background-color);
+	color: var(--tertiary-button-text-color);
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+}
+
+button.button-primary:hover,
+button.button-primary.hover {
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button.button-primary:active,
+button.button-primary.active {
+	box-shadow: inset -2px 4px 10px rgba(78, 76, 76, 0.4);
+	border: 3px rgba(78, 76, 76 , 0.26) solid;
+}
+
+button.button-primary:disabled,
+button.button-primary.disabled {
+	background: var(--button-disabled-background);
+    border: 3px solid var(--button-disabled-background);
+    box-shadow: none;
+    color: black;
+}
+
+
+button.button-secondary:hover,
+button.button-secondary.hover {
+	background: rgba(0, 41, 255, 0.11);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button.button-secondary:active,
+button.button-secondary.active {
+	box-shadow: inset -2px 4px 10px rgba(78, 76, 76, 0.4);
+	background: rgba(0, 41, 255, 0.11);
+}
+
+button.button-secondary:disabled,
+button.button-secondary.disabled {
+	background: var(--button-disabled-background);
+    border: 3px solid var(--secondary-button-disabled-border-color);
+    box-shadow: none;
+    color: var(--secondary-button-disabled-color);
+}
+
+
+
+button.button-tertiary:hover,
+button.button-tertiary.hover {
+	background: rgba(0, 41, 255, 0.15);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+button.button-tertiary:active,
+button.button-tertiary.active {
+	background: rgba(0, 41, 255, 0.15);
+	box-shadow: inset -2px 4px 10px rgba(78, 76, 76, 0.25);
+}
+
+button.button-tertiary:disabled,
+button.button-tertiary.disabled {
+	background: var(--button-disabled-background);
+	box-shadow: none;
+}

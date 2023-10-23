@@ -1,0 +1,1 @@
+<script src="https://unpkg.com/picmo@latest/dist/umd/index.js"></script>
