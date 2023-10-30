@@ -70,6 +70,7 @@ Controllers.articlesApi = require("./articles/articles.api");
 Controllers.teaching_style = require("./teachingStyle");
 Controllers.widgets = require("./widgets");
 Controllers.dtpen = require("./dtpen");
+Controllers.mypagedashboard = require('./myPageAli');
 
 Controllers.applicationManager = require("./applicationManager")
 Controllers.reset = async function (req, res) {

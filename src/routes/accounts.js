@@ -786,6 +786,13 @@ module.exports = function (app, middleware, controllers) {
 		middlewares,
 		controllers.widgets.reflections
 	);
+	setupPageRoute(
+		app,
+		"/mypageali",
+		middleware,
+		middlewares,
+		controllers.mypagedashboard.get
+	);
 
 	const PAGES = ['dashboard','html','css','js','output'];
 	PAGES.forEach(name => setupPageRoute(app, "/widgets/dtpen/"+name+"/:id", middleware, middlewares, controllers.widgets['dtpen_'+name]));
